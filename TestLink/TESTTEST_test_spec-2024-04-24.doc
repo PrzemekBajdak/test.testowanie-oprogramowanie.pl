@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testspec test.testowanie-oprogramowanie.pltest.testowanie-oprogramowanie.pl</title>
+<link type="text/css" rel="stylesheet" href="http://localhost:8888/testlink/testlink-code-testlink_1_9_20_fixed/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width=231 height=56 src="http://localhost:8888/testlink/testlink-code-testlink_1_9_20_fixed/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Specyfikacja testowa</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Projekt testowy: test.testowanie-oprogramowanie.pltest.testowanie-oprogramowanie.pl</p></div>
+<div class="summary"><p id="printedby">Wydrukowany przez TestLink dnia 24.04.2024</p></div>
+<div class="pagefooter" id="copyright">2021 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Spis treści</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.Koszyk</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc232">TESTTEST-1: Dodanie produktu do koszyka</a></p><p style="padding-left: 45px;"><a href="#toc_tc238">TESTTEST-2: Usuwanie produktu z koszyka poprzez przycisk &quot;X&quot;</a></p><p style="padding-left: 45px;"><a href="#toc_tc243">TESTTEST-3: Usuwanie produktu z koszyka poprzez aktualizacje produktu</a></p><p style="padding-left: 45px;"><a href="#toc_tc248">TESTTEST-4: Dodanie dwóch różnych produktu do koszyka</a></p><p style="padding-left: 45px;"><a href="#toc_tc258">TESTTEST-5: Usuwanie dwóch produktów z koszyka poprzez przycisk &quot;X&quot;</a></p><br/><p style="padding-left: 20px;"><b><a href="#toc_2">2.Rejestracja użytkownika</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc265">TESTTEST-6: Pozytywna rejestracja użytkownika</a></p><br/><p style="padding-left: 20px;"><b><a href="#toc_3">3.Logowanie użytkownika</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc275">TESTTEST-7: Pozytywne logowanie się użytkownika</a></p><p style="padding-left: 45px;"><a href="#toc_tc281">TESTTEST-8: Negatywne logowanie się użytkownika</a></p><br/><p style="padding-left: 20px;"><b><a href="#toc_4">4.Formularz kontaktowy</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc286">TESTTEST-9: Pozytywny formularz kontaktowy</a></p><p style="padding-left: 45px;"><a href="#toc_tc290">TESTTEST-10: Negatywny formularz kontaktowy - Brak wymaganych danych</a></p><br/><p style="padding-left: 20px;"><b><a href="#toc_5">5.Responsywność strony</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc294">TESTTEST-11: Test responsywności na laptopie Huawei MRC-WX0</a></p><p style="padding-left: 45px;"><a href="#toc_tc302">TESTTEST-12: Test responsywności na urządzeniu mobilne Oppo Reno 3 Pro</a></p><br/><p style="padding-left: 20px;"><b><a href="#toc_6">6.Nawigacja</a></b></p>
+<br/><p style="padding-left: 20px;"><b><a href="#toc_7">7.Testy kompatybilności</a></b></p>
+</div><a name='toc_1'></a>
+<h1 class='doclevel'>1.Zestaw testów : Koszyk</h1>
+<div><p>Sprawdzanie funkcjonalności koszyka.</p>
+</div><a name="toc_tc232"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-1: Dodanie produktu do koszyka&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest przetestowanie funkcjonalności koszyka w tym przypadku dodawanie produktu.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Przechodzimy na stronę gł&oacute;wną sklepu internetowego&nbsp;<a href="https://test.testowanie-oprogramowania.pl/" target="_new">https://test.testowanie-oprogramowania.pl/</a></p>
+</td><td><p>Strona załadowała się prawidłowo</p>
+</td></tr><tr><td width="5">2</td><td><p>Przechodzimy do strony szczeg&oacute;ł&oacute;w produktu.</p>
+</td><td><p>Strona prawidłowo przekierowała nas do szczeg&oacute;ł&oacute;w danego produktu. Widoczny jest przycisk &quot;Dodaj do koszyka&quot;</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w przycisk &quot;Dodaj do koszyka&quot;</p>
+</td><td><p>Otrzymujemy komunikat &quot;&bdquo;Produt&rdquo; został dodany do koszyka.&quot;&nbsp;oraz zmienia się liczba przy koszyku w headerze</p>
+</td></tr><tr><td width="5">4</td><td><p>Przechodzimy do koszyka, klikając na ikonę koszyka lub przycisk &quot;Zobacz koszyk&quot;.</p>
+</td><td><p>Strona prawidłowo&nbsp;nas przekierowała do koszyka. Widzimy dodany produkt &quot;Produkt&quot; do koszyka.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc238"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-2: Usuwanie produktu z koszyka poprzez przycisk &quot;X&quot;&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności usuwania produktu z koszyka</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi mieć w koszyku jeden dodany produkt</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Przechodzimy na stronę gł&oacute;wną sklepu internetowego&nbsp;<a href="https://test.testowanie-oprogramowania.pl/" target="_new">https://test.testowanie-oprogramowania.pl/</a>&nbsp;</p>
+</td><td><p>Strona prawidłowo się załadowała</p>
+</td></tr><tr><td width="5">2</td><td><p>Przechodzimy do koszyka lub&nbsp;https://test.testowanie-oprogramowania.pl/cart/</p>
+</td><td><p>Strona przekierowała nas do koszyka. W koszyku znajduje się produkt.</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w przycisk &quot;X&quot; znajdujący się obok produktu.</p>
+</td><td><p>Otrzymujemy dwa komunikaty:<br />
+&quot;Usunięto: &bdquo;Produkt&rdquo;.&nbsp;Cofnij?&quot;<br />
+oraz &quot;Tw&oacute;j koszyk aktualnie jest pusty.&quot;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc243"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-3: Usuwanie produktu z koszyka poprzez aktualizacje produktu&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności usuwania produktu z koszyka</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi mieć w koszyku dodany jeden produkt</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Przechodzimy na stronę gł&oacute;wną sklepu internetowego&nbsp;<a href="https://test.testowanie-oprogramowania.pl/" target="_new">https://test.testowanie-oprogramowania.pl/</a>&nbsp;</p>
+</td><td><p>Strona prawidłowo się załadowała</p>
+</td></tr><tr><td width="5">2</td><td><p>Przechodzimy do koszyka lub&nbsp;https://test.testowanie-oprogramowania.pl/cart/</p>
+</td><td><p>Strona przekierowała nas do koszyka. W koszyku znajduje się produkt.</p>
+</td></tr><tr><td width="5">3</td><td><p>W kolumnie &quot;Ilość&quot; klikamy w przycisk &quot;-&quot; i redukujemy liczbę do 0.</p>
+</td><td><p>Otrzymujemy dwa komunikaty:<br />
+&bdquo;Koszyk zaktualizowany.&quot;<br />
+oraz &quot;Tw&oacute;j koszyk aktualnie jest pusty.&quot;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc248"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-4: Dodanie dwóch różnych produktu do koszyka&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest przetestowanie funkcjonalności koszyka w tym przypadku dodawanie produktu.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Przechodzimy na stronę gł&oacute;wną sklepu internetowego&nbsp;<a href="https://test.testowanie-oprogramowania.pl/" target="_new">https://test.testowanie-oprogramowania.pl/</a></p>
+</td><td><p>Strona załadowała się prawidłowo</p>
+</td></tr><tr><td width="5">2</td><td><p>Przechodzimy do strony szczeg&oacute;ł&oacute;w produktu &quot;Poster V1&quot;</p>
+</td><td><p>Strona prawidłowo przekierowała nas do szczeg&oacute;ł&oacute;w danego produktu. Widoczny jest przycisk &quot;Dodaj do koszyka&quot;</p>
+</td></tr><tr><td width="5">4</td><td><p>Klikamy w przycisk &quot;Dodaj do koszyka&quot;</p>
+</td><td><p>Otrzymujemy komunikat &quot;&bdquo;Poster V1&rdquo; został dodany do koszyka.&quot;&nbsp;oraz zmienia się liczba przy koszyku w headerze</p>
+</td></tr><tr><td width="5">5</td><td><p>Klikamy w przycisk &quot;Home&quot; lub ponownie przechodzimy na gł&oacute;wną stronę&nbsp;<a href="https://test.testowanie-oprogramowania.pl/" target="_new">https://test.testowanie-oprogramowania.pl/</a></p>
+</td><td><p>Strona przekierowała nas prawidłowo na gł&oacute;wną stronę&nbsp;</p>
+</td></tr><tr><td width="5">6</td><td><p>Przechodzimy do strony szczeg&oacute;ł&oacute;w produktu &quot;Poster V2&quot;</p>
+</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona prawidłowo przekierowała nas do szczeg&oacute;ł&oacute;w danego produktu. Widoczny jest przycisk &quot;Dodaj do koszyka&quot;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td width="5">7</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Klikamy w przycisk &quot;Dodaj do koszyka&quot;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td><td><p>Otrzymujemy komunikat &quot;&bdquo;Poster V2&rdquo; został dodany do koszyka.&quot;&nbsp;oraz zmienia się liczba przy koszyku w headerze</p>
+</td></tr><tr><td width="5">8</td><td><p>Przechodzimy do koszyka, klikając na ikonę koszyka lub przycisk &quot;Zobacz koszyk&quot;.</p>
+</td><td><p>Strona prawidłowo&nbsp;nas przekierowała do koszyka. Widzimy dodany produkt &quot;Poster V1&quot; do koszyka.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc258"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-5: Usuwanie dwóch produktów z koszyka poprzez przycisk &quot;X&quot;&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest przetestowanie funkcjonalności usuwanie większej ilości produkt&oacute;w z koszyka</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik posiada w koszyku dwa dowolne produktu po jednej sztuce każdego.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Przechodzimy&nbsp;na stronę gł&oacute;wną sklepu internetowego&nbsp;<a href="https://test.testowanie-oprogramowania.pl/" target="_new">https://test.testowanie-oprogramowania.pl/</a></p>
+</td><td><p>Strona prawidłowo się otworzyła</p>
+</td></tr><tr><td width="5">2</td><td><p>Przechodzimy do koszyka klikając w ikonkę koszyka w headerze lub poprzez&nbsp;https://test.testowanie-oprogramowania.pl/cart/</p>
+</td><td><p>Strona prawidłowo nas przekierowała. Widzimy dwa r&oacute;żne produkty w koszyku</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w przycisk &quot;X&quot; przy pierwszym dostępnym produkcie.</p>
+</td><td><p>Produkt znika z koszyka.<br />
+Otrzymujemy komunikat: &quot;Usunięto: &bdquo;Produkt&rdquo;.&nbsp;Cofnij?&quot;</p>
+</td></tr><tr><td width="5">4</td><td><p>Klikamy w przycisk &quot;X&quot; przy produkcie, kt&oacute;ry pozostał.</p>
+</td><td><p>Produkt znika w koszyka.<br />
+Otrzymujemy dwa komunikaty:&nbsp;<br />
+&quot;Usunięto: &bdquo;Produkt&rdquo;.&nbsp;Cofnij?&quot; oraz &quot;Tw&oacute;j koszyk aktualnie jest pusty.&quot;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name='toc_2'></a>
+<h1 class='doclevel'>2.Zestaw testów : Rejestracja użytkownika</h1>
+<div><p>Sprawdzenie poprawności działania formularza rejestracji.</p>
+</div><a name="toc_tc265"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-6: Pozytywna rejestracja użytkownika&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności rejestrowania nowego użytkownika.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Przechodzimy na stronę&nbsp;https://test.testowanie-oprogramowania.pl/</p>
+</td><td><p>Strona prawidłowo się załadowała</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk postaci znajdujący się w headerze.&nbsp;</p>
+</td><td><p>Strona prawidłowo przekierowała nas do strony logowania. Widoczny mamy formularz do logowania, przycisk &quot;Zaloguj się&quot; oraz &quot;Zarejestruj się&quot;</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w przycisk &quot;Zarejestruj się&quot;</p>
+</td><td><p>Strona prawidłowo przekierowała nas do formularza rejestracji nowych użytkownik&oacute;w.</p>
+
+<p>Wyświetlają się nam pola formularza:</p>
+
+<ul>
+	<li>Imię</li>
+	<li>Nazwisko</li>
+	<li>Adres e-mail</li>
+	<li>Hasło</li>
+	<li>Powt&oacute;rz hasło</li>
+</ul>
+
+<p>Pod formularzem widoczny jest przycisk &quot;Zarejestruj się&quot;</p>
+</td></tr><tr><td width="5">4</td><td><p>Uzupełniamy formularz podanymi danymi:<br />
+&nbsp;</p>
+
+<ul>
+	<li>Imię - Przemek</li>
+	<li>Nazwisko - Bajdak</li>
+	<li>Adres e-mail - bajdak123@gmail.com</li>
+	<li>Hasło - test123</li>
+	<li>Powt&oacute;rz hasło - test123</li>
+</ul>
+
+<p>i klikamy w przycisk &quot;Zarejestruj się&quot;</p>
+</td><td><p>Pojawia sie komunikat &quot;Udało Ci się zajestrować. Na twojego e-mail przyjdzie link aktywacyjny&quot;</p>
+</td></tr><tr><td width="5">5</td><td><p>Przechodzimy na e-maila oraz klikamy w link, kt&oacute;ry otrzymalismy na e-mail</p>
+</td><td><p>Link poprawnie przekierowuje nas do strony aktywacyjnej z komunikatem &quot;Twoje konto jest aktywne&quot; oraz pojawia się przycisk &quot;Zaloguj się&quot; z przekierowanie do strony logowania.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">10.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name='toc_3'></a>
+<h1 class='doclevel'>3.Zestaw testów : Logowanie użytkownika</h1>
+<div><p>Sprawdzenie poprawności działania formularza logowania.</p>
+</div><a name="toc_tc275"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-7: Pozytywne logowanie się użytkownika&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Zweryfikowanie poprawności procesu logowania użytkownika na stronie internetowej.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Przechodzimy na stronę&nbsp;https://test.testowanie-oprogramowania.pl/</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td><td><p>Strona prawidłowo się załadowała</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk postaci znajdujący się w headerze</p>
+</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona prawidłowo przekierowała nas do strony logowania. Widoczny mamy formularz do logowania, przycisk &quot;Zaloguj się&quot; oraz &quot;Zarejestruj się&quot;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td width="5">3</td><td><p>Uzupełniamy formularz logowania podanymi danymi:<br />
+&nbsp;</p>
+
+<ul>
+	<li>Adres e-mail - bajdak123@gmail.com</li>
+	<li>Hasło - test123</li>
+</ul>
+
+<p>i klikamy w przycisk &quot;Zaloguj się&quot;</p>
+</td><td><p>Pojawił się komunikat &quot;Witamy w panelu&quot;, a następnie przekierowało nas do ustawień</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc281"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-8: Negatywne logowanie się użytkownika&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Sprawdzenie poprawności obsługi błędnych danych logowania przez system.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Przechodzimy na stronę&nbsp;https://test.testowanie-oprogramowania.pl/</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td><td><p>Strona prawidłowo się załadowała</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk postaci znajdujący się w headerze</p>
+</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona prawidłowo przekierowała nas do strony logowania. Widoczny mamy formularz do logowania, przycisk &quot;Zaloguj się&quot; oraz &quot;Zarejestruj się&quot;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td width="5">3</td><td><p>Uzupełniamy formularz logowania podanymi danymi:<br />
+&nbsp;</p>
+
+<ul>
+	<li>Adres e-mail - bajdak1234@gmail.com</li>
+	<li>Hasło - test123</li>
+</ul>
+
+<p>i klikamy w przycisk &quot;Zaloguj się&quot;</p>
+</td><td><p>Pojawił się komunikat &quot;Nieporawne email albo hasło&quot; i pozostajemy w formularzu logowania.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name='toc_4'></a>
+<h1 class='doclevel'>4.Zestaw testów : Formularz kontaktowy</h1>
+<div><p>Sprawdzenie fukcjonalności formularza kontaktowego</p>
+</div><a name="toc_tc286"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-9: Pozytywny formularz kontaktowy&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Zweryfikowanie poprawności działania formularza kontaktowego i przekazywania danych do administratora strony.</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik znajduje się na stronie internetowej sklepu internetowego, na kt&oacute;rej znajduje się formularz kontaktowy.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Wypełnij formularz kontaktowy, wprowadzając poprawne dane.</p>
+
+<ul>
+	<li>Imię: [imię użytkownika]</li>
+	<li>Nazwisko: [nazwisko użytkownika]</li>
+	<li>Adres e-mail: [adres e-mail użytkownika]</li>
+	<li>Temat: [temat wiadomości]</li>
+	<li>Treść wiadomości: [treść wiadomości]</li>
+</ul>
+</td><td><p>Wszystkie pola prawidłowo uzupełnione</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;Wyślij&quot;&nbsp;</p>
+</td><td><p>Otrzymujemy komunikat: &quot;Właśnie dostaliśmy twoja wiadomość. Skontaktujemy się z tobą możliwie jak najszybciej&quot;.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">10.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Średnia</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc290"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-10: Negatywny formularz kontaktowy - Brak wymaganych danych&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Zweryfikowanie, czy formularz kontaktowy odpowiednio obsługuje brak wymaganych danych i wyświetla odpowiednie komunikaty dla użytkownika</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik znajduje się na stronie internetowej sklepu internetowego, na kt&oacute;rej znajduje się formularz kontaktowy.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Wypełniamy formularz kontaktowy, wprowadzając poprawne dane.</p>
+
+<ul>
+	<li>Adres e-mail: [adres e-mail użytkownika]</li>
+	<li>Temat: [temat wiadomości]</li>
+	<li>Treść wiadomości: [treść wiadomości]</li>
+</ul>
+
+<p>oraz pozostawiamy dwa puste pola imię i nazwisko.</p>
+</td><td><p>Wszystkie pola prawidłowo uzupełnione</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;Wyślij&quot;&nbsp;</p>
+</td><td><p>Otrzymujemy komunikat: &quot;Musisz uzupełnić wszystkie pola, by wysłać wiadomość&quot;.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">10.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Średnia</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name='toc_5'></a>
+<h1 class='doclevel'>5.Zestaw testów : Responsywność strony</h1>
+<div><ul>
+	<li>Testowanie responsywności strony na r&oacute;żnych urządzeniach (komputer, tablet, telefon).</li>
+	<li>Weryfikacja czy strona poprawnie dostosowuje się do r&oacute;żnych rozmiar&oacute;w ekranu.</li>
+</ul>
+</div><a name="toc_tc294"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-11: Test responsywności na laptopie Huawei MRC-WX0&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Sprawdzenie, czy strona internetowa jest responsywna i poprawnie wyświetla się na ekranie laptopa o r&oacute;żnych rozmiarach.</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik znajduje się na stronie internetowej sklepu internetowego, kt&oacute;ra ma być testowana pod kątem responsywności na laptopie.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy gł&oacute;wną stronę internetową na laptopie.</p>
+</td><td><p>Strona wczytała się prawidłowo z wszystkimi elementami wizualnymi.</p>
+</td></tr><tr><td width="5">2</td><td><p>Sprawdzamy czy elementy na stronie są czytelne i dostowane do rozmiaru ekranu.</p>
+</td><td><p>Wszystkie elementy powinny być czytelne oraz dopasowane</p>
+</td></tr><tr><td width="5">3</td><td><p>Zmniejszamy szerokość okna przeglądarki, symulując zmiejszanie rozmiaru ekranu</p>
+</td><td><p>Strona powinna dostosować się do r&oacute;żnych rozmiaru.</p>
+</td></tr><tr><td width="5">4</td><td><p>Sprawdzamy czy strona responsywnie dostosowuje się do zmniejszonej przestrzeni ekranu.</p>
+</td><td><p>Strona powinna dostosować się do r&oacute;żnych pozycji.</p>
+</td></tr><tr><td width="5">5</td><td><p>Weryfikujemy czy&nbsp;nie występują poziome paski przewijania lub obcięte treści.</p>
+</td><td><p>Wszystkie elementy powinny być tak wyświetlane, by nie trzeba było przewijać strony.</p>
+</td></tr><tr><td width="5">6</td><td><p>Zwiększamy ponownie szerokość okna przeglądarki do pierwotnego rozmiaru</p>
+</td><td><p>Strona powinna wr&oacute;cić do początkowej formy.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">25.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc302"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy TESTTEST-12: Test responsywności na urządzeniu mobilne Oppo Reno 3 Pro&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Sprawdzenie, czy strona internetowa jest responsywna i poprawnie wyświetla się na ekranie laptopa o r&oacute;żnych rozmiarach.</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik znajduje się na stronie internetowej sklepu internetowego, kt&oacute;ra ma być testowana pod kątem responsywności na laptopie.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy gł&oacute;wną stronę internetową na laptopie.</p>
+</td><td><p>Strona wczytała się prawidłowo z wszystkimi elementami wizualnymi.</p>
+</td></tr><tr><td width="5">2</td><td><p>Sprawdzamy czy elementy na stronie są czytelne i dostowane do rozmiaru ekranu.</p>
+</td><td><p>Wszystkie elementy powinny być czytelne oraz dopasowane</p>
+</td></tr><tr><td width="5">3</td><td><p>Zmniejszamy szerokość okna przeglądarki, symulując zmiejszanie rozmiaru ekranu</p>
+</td><td><p>Strona powinna dostosować się do r&oacute;żnych rozmiaru.</p>
+</td></tr><tr><td width="5">4</td><td><p>Sprawdzamy czy strona responsywnie dostosowuje się do zmniejszonej przestrzeni ekranu.</p>
+</td><td><p>Strona powinna dostosować się do r&oacute;żnych pozycji.</p>
+</td></tr><tr><td width="5">5</td><td><p>Weryfikujemy czy&nbsp;nie występują poziome paski przewijania lub obcięte treści.</p>
+</td><td><p>Wszystkie elementy powinny być tak wyświetlane, by nie trzeba było przewijać strony.</p>
+</td></tr><tr><td width="5">6</td><td><p>Zwiększamy ponownie szerokość okna przeglądarki do pierwotnego rozmiaru</p>
+</td><td><p>Strona powinna wr&oacute;cić do początkowej formy.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">25.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name='toc_6'></a>
+<h1 class='doclevel'>6.Zestaw testów : Nawigacja</h1>
+<div><ul>
+	<li>Testowanie działania wszystkich link&oacute;w i przycisk&oacute;w na stronie.</li>
+	<li>Weryfikacja czy użytkownik może łatwo nawigować po stronie.</li>
+</ul>
+</div><a name='toc_7'></a>
+<h1 class='doclevel'>7.Zestaw testów : Testy kompatybilności</h1>
+<div><ul>
+	<li>Sprawdzenie czy strona działa poprawnie na r&oacute;żnych przeglądarkach (Chrome, Firefox, Safari, Edge).</li>
+	<li>Weryfikacja czy strona jest kompatybilna z r&oacute;żnymi systemami operacyjnymi (Windows, macOS, Linux, Android).</li>
+</ul>
+</div>
+</body>
+</html>
